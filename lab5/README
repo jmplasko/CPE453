@@ -1,0 +1,19 @@
+Name: James Plasko (Jplasko)
+
+To compile the three test programs just run "make":
+
+  threaded counting:
+
+    gcc -o num numbersmain.c lwp.c magic64.S libsnakes.a -lncurses
+
+  hungrysnakes:
+
+    gcc -o hungry hungrymain.c lwp.c magic64.S libsnakes.a -lncurses
+
+  randomsnakes:
+
+    gcc -o snake snakemain.c lwp.c magic64.S libsnakes.a -lncurses
+
+Each of the snake programs installs signal handlers such that
+SIGINT (^C) will kill a snake, and SIGQUIT (^\) will terminate
+threading.

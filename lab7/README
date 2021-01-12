@@ -1,0 +1,13 @@
+Name: James Plasko (jplasko)
+
+Compile: make
+
+Run: ./main addresses.txt
+
+So the spec calls for a TLB but it doesn't 
+make it faster in this instance since all 
+the pages fit in memory. It would be useful 
+if pages were being moved in and out. For this 
+reason I left it out. If i wanted to add it I would
+just copy and paste my set_and_check function with 
+slight changes. 
