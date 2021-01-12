@@ -1,0 +1,15 @@
+Name: James Plasko (jplasko)
+ 
+Compile: make 
+
+Run: ./threads {input array file} {output file}
+
+To Know: Runs with no errors but has warnings when it compiles using Makefile
+The input array file is a int and then new line
+ex:
+1242
+1422
+2
+35
+
+The input file is array.txt and the output is out.txt
